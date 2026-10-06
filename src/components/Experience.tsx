@@ -180,7 +180,7 @@ export default function Experience() {
               <span className="acc-peek-label" aria-hidden="true">{job.peekLabel}</span>
               <div className="acc-body">
                 <div className="acc-media">
-                  <div className="acc-device"><img src='/images/lack.png'></img></div>
+                  <div className="acc-device"><img src='/Black.png'></img></div>
                 </div>
                 <span className="work-eyebrow">{job.eyebrow}</span>
                 <h3 className="work-title">{job.title}</h3>
