@@ -4,36 +4,34 @@ import React, { useEffect, useRef, useState } from 'react';
 
 function MockDashboard() {
   return (
-    <img src='/images/Black.png'></img>
-
-    // <svg viewBox="0 0 1454 780" role="img" aria-label="Dashboard interface wireframe">
-    //   <rect width="1454" height="780" rx="28" fill="#161616" />
-    //   <rect x="0" y="0" width="240" height="780" rx="28" fill="#1e1e1e" />
-    //   <rect x="36" y="40" width="120" height="18" rx="9" fill="#4a4a4a" />
-    //   {[0, 1, 2, 3, 4].map((i) => (
-    //     <rect key={i} x="36" y={110 + i * 62} width={i === 1 ? 168 : 140} height="16" rx="8" fill={i === 1 ? '#e9e9e9' : '#3a3a3a'} />
-    //   ))}
-    //   <rect x="280" y="40" width="320" height="24" rx="12" fill="#e9e9e9" />
-    //   <rect x="1140" y="36" width="76" height="76" rx="38" fill="#2a2a2a" />
-    //   <rect x="1240" y="36" width="178" height="76" rx="38" fill="#e9e9e9" />
-    //   {[0, 1, 2].map((i) => (
-    //     <g key={i}>
-    //       <rect x={280 + i * 390} y="150" width="350" height="180" rx="20" fill="#1e1e1e" stroke="#333" />
-    //       <rect x={312 + i * 390} y="186" width="110" height="14" rx="7" fill="#4a4a4a" />
-    //       <rect x={312 + i * 390} y="222" width="180" height="34" rx="10" fill={i === 0 ? '#e9e9e9' : '#5a5a5a'} />
-    //       <rect x={312 + i * 390} y="286" width="90" height="12" rx="6" fill="#333" />
-    //     </g>
-    //   ))}
-    //   <rect x="280" y="370" width="740" height="360" rx="20" fill="#1e1e1e" stroke="#333" />
-    //   {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
-    //     <rect key={i} x={330 + i * 82} y={690 - (i % 3 === 0 ? 220 : i % 2 ? 150 : 90)} width="44" height={i % 3 === 0 ? 220 : i % 2 ? 150 : 90} rx="10" fill={i === 5 ? '#e9e9e9' : '#3a3a3a'} />
-    //   ))}
-    //   <rect x="1050" y="370" width="368" height="360" rx="20" fill="#1e1e1e" stroke="#333" />
-    //   <circle cx="1234" cy="510" r="82" fill="none" stroke="#3a3a3a" strokeWidth="26" />
-    //   <path d="M1234 428 a82 82 0 0 1 71 123" fill="none" stroke="#e9e9e9" strokeWidth="26" />
-    //   <rect x="1090" y="640" width="290" height="14" rx="7" fill="#3a3a3a" />
-    //   <rect x="1090" y="676" width="210" height="14" rx="7" fill="#2a2a2a" />
-    // </svg>
+    <svg viewBox="0 0 1454 780" role="img" aria-label="Dashboard interface wireframe">
+      <rect width="1454" height="780" rx="28" fill="#161616" />
+      <rect x="0" y="0" width="240" height="780" rx="28" fill="#1e1e1e" />
+      <rect x="36" y="40" width="120" height="18" rx="9" fill="#4a4a4a" />
+      {[0, 1, 2, 3, 4].map((i) => (
+        <rect key={i} x="36" y={110 + i * 62} width={i === 1 ? 168 : 140} height="16" rx="8" fill={i === 1 ? '#e9e9e9' : '#3a3a3a'} />
+      ))}
+      <rect x="280" y="40" width="320" height="24" rx="12" fill="#e9e9e9" />
+      <rect x="1140" y="36" width="76" height="76" rx="38" fill="#2a2a2a" />
+      <rect x="1240" y="36" width="178" height="76" rx="38" fill="#e9e9e9" />
+      {[0, 1, 2].map((i) => (
+        <g key={i}>
+          <rect x={280 + i * 390} y="150" width="350" height="180" rx="20" fill="#1e1e1e" stroke="#333" />
+          <rect x={312 + i * 390} y="186" width="110" height="14" rx="7" fill="#4a4a4a" />
+          <rect x={312 + i * 390} y="222" width="180" height="34" rx="10" fill={i === 0 ? '#e9e9e9' : '#5a5a5a'} />
+          <rect x={312 + i * 390} y="286" width="90" height="12" rx="6" fill="#333" />
+        </g>
+      ))}
+      <rect x="280" y="370" width="740" height="360" rx="20" fill="#1e1e1e" stroke="#333" />
+      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
+        <rect key={i} x={330 + i * 82} y={690 - (i % 3 === 0 ? 220 : i % 2 ? 150 : 90)} width="44" height={i % 3 === 0 ? 220 : i % 2 ? 150 : 90} rx="10" fill={i === 5 ? '#e9e9e9' : '#3a3a3a'} />
+      ))}
+      <rect x="1050" y="370" width="368" height="360" rx="20" fill="#1e1e1e" stroke="#333" />
+      <circle cx="1234" cy="510" r="82" fill="none" stroke="#3a3a3a" strokeWidth="26" />
+      <path d="M1234 428 a82 82 0 0 1 71 123" fill="none" stroke="#e9e9e9" strokeWidth="26" />
+      <rect x="1090" y="640" width="290" height="14" rx="7" fill="#3a3a3a" />
+      <rect x="1090" y="676" width="210" height="14" rx="7" fill="#2a2a2a" />
+    </svg>
   );
 }
 
@@ -182,7 +180,7 @@ export default function Experience() {
               <span className="acc-peek-label" aria-hidden="true">{job.peekLabel}</span>
               <div className="acc-body">
                 <div className="acc-media">
-                  <div className="acc-device"><job.mock /></div>
+                  <div className="acc-device"><img src='/images/lack.png'></img></div>
                 </div>
                 <span className="work-eyebrow">{job.eyebrow}</span>
                 <h3 className="work-title">{job.title}</h3>
