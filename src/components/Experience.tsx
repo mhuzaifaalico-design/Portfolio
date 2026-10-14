@@ -94,6 +94,7 @@ function MockBranding() {
 interface Job {
   id: string;
   peekLabel: string;
+  image: string;
   eyebrow: string;
   title: string;
   desc: string;
@@ -105,6 +106,7 @@ const JOBS: Job[] = [
   {
     id: 'sixtysix',
     peekLabel: '01 — 66loop Technologies',
+    image: '/66.png',
     eyebrow: '01 — UX/UI Designer · Jan 2026 — Present · Lahore',
     title: '66loop Technologies',
     desc: 'Leading UX/UI end to end — research, flows, wireframes and design systems — with AI-augmented workflows that take products from idea to prototype, fast.',
@@ -114,6 +116,7 @@ const JOBS: Job[] = [
   {
     id: 'bufferstack',
     peekLabel: '02 — BufferStack Technologies',
+    image: '/BS.png',
     eyebrow: '02 — UX/UI Designer · Aug 2025 — Jan 2026 · Lahore',
     title: 'BufferStack Technologies',
     desc: 'Designed mobile and web interfaces: personas, user flows, hi-fi prototypes in Figma and user testing in Maze to validate every decision.',
@@ -123,6 +126,7 @@ const JOBS: Job[] = [
   {
     id: 'clixo',
     peekLabel: '03 — Clixo Digital',
+    image: '/CL.png',
     eyebrow: '03 — Visual Designer · Feb 2024 — Apr 2025 · Lahore',
     title: 'Clixo Digital',
     desc: 'Crafted visual identities, marketing creatives and pixel-perfect mockups in Photoshop — the foundation of my eye for detail.',
@@ -180,7 +184,7 @@ export default function Experience() {
               <span className="acc-peek-label" aria-hidden="true">{job.peekLabel}</span>
               <div className="acc-body">
                 <div className="acc-media">
-                  <div className="acc-device"><img src='/Black.png'></img></div>
+                  <div className="acc-device"><img src={job.image} alt={job.title} /></div>
                 </div>
                 <span className="work-eyebrow">{job.eyebrow}</span>
                 <h3 className="work-title">{job.title}</h3>
